@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+// program to find the average of 5 numbers using an array
+int main()
+{
+    int ROW=3;
+    int COLUMN=3;
+    int A[ROW][COLUMN];
+    float avg=0;
+    printf("enter a matrix 3x3\n");
+     //taking input and storing in an array
+    for(int i=0;i<ROW;++i)
+    {
+        for(int j=0;j<COLUMN;++j)
+        {
+            printf("city %d,day %d  ",i+1,j+1);
+            scanf("%d",&A[i][j]);
+        }
+    }
+    printf("display the matrix\n");
+
+        for(int i=0;i<ROW;++i)
+         {
+          for(int j=0;j<COLUMN;++j)
+           {
+            printf(" %d",A[i][j]);
+            if(j==2)
+                printf("\n");
+           }
+
+
+         }
+
+
+    return 0;
+}
